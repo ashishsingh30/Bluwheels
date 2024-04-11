@@ -1,0 +1,14 @@
+{
+  "name": "bluwheels",
+  "version": "1.0.0",
+  "description": "This is used for uploading vehicle data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1597.0"
+  }
+}

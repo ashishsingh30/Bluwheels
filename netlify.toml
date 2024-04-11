@@ -1,0 +1,24 @@
+[build]
+  # Directory that contains your built site. 
+  # For a static site, it could be something like 'public' or 'dist'. 
+  # Adjust according to your build output directory.
+  publish = "build" 
+
+  # Command to build your site. Adjust according to your project's build command.
+  command = "npm run build" 
+
+  # Directory that contains your serverless functions.
+  functions = "netlify/functions"
+
+# Environment variables can also be specified here. 
+# For security reasons, sensitive environment variables should be set in the Netlify UI.
+[build.environment]
+  NODE_VERSION = "14"
+  # AWS_ACCESS_KEY_ID = "your_access_key_id"
+  # AWS_SECRET_ACCESS_KEY = "your_secret_access_key"
+
+# Example redirect rules
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
